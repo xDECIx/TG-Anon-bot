@@ -29,21 +29,6 @@ def stop_search():
     return markup
 
 
-# def job(message):
-# chat_id = message.chat.id
-# bot.send_message(chat_id, "Хей тебя тут давно не было, поговори с кем нибудь 🙃")
-# print ('вывод')
-
-# schedule.every(1).minutes.do(job)
-
-# schedule.every().wednesday.at("20:15").do(job)
-# schedule.every().sunday.at("22:25").do(job)
-
-# while True:
-# schedule.run_pending()
-# time.sleep(1)
-
-
 @bot.message_handler(commands=['start'])
 def start(message):
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
